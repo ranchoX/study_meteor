@@ -616,7 +616,7 @@
 @container-tablet:            ((720px + @grid-gutter-width));
 
 // Medium screen / desktop
-@container-desktop:           ((930px + @grid-gutter-width));
+@container-desktop:           ((940px + @grid-gutter-width));
 
 // Large screen / wide desktop
-@container-lg-desktop:        ((930px + @grid-gutter-width));
+@container-lg-desktop:        ((1140px + @grid-gutter-width));
