@@ -1,3 +1,5 @@
+Questions=new Meteor.Collection('questions');
+
 // var Schema=require('mongoose').Schema;
 // var AnswerSchema=new Schema({
 // 	id:Number,

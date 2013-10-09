@@ -1,0 +1,26 @@
+<template name="index">
+	<div class="row">
+		<div class="md-col-2">
+			<div>
+				<!--login info-->
+				<div class="user-login"></div>
+				<!--index and inbox-->
+				<div class="nav"></div>
+				<!--unfinsh blog or question-->
+				<div class="user-drafts"></div>
+			</div>
+		</div>
+		<div class="md-col-8">
+			<div>
+				{{>publish_textarea}}
+				{{>broadcast_list}}
+			</div>
+		</div>
+		<div class="md-col-2">
+			<div>
+				{{>suggested_blogs}}
+				{{>suggested_peoples}}
+			</div>
+		</div>
+	</div>
+</template>

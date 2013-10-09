@@ -1,0 +1,1 @@
+Broadcast=new Meteor.Collection('broadcasts');

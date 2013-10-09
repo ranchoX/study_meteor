@@ -1,0 +1,71 @@
+<template name="header">
+  <div id="masthead-container" class="zindex-t35 light-bg">
+    <div id="masthead">
+      <div id="masthead-inner-container">
+            <h1 id="network-logo">
+              <a href="/eprotime.com/" title=""><img alt="Protime" class="network-logo-img" src="https://www.yammer.com/yamage/logos/25165/ll.gif" style="_height: 50px !important;" width="160px"></a>
+            </h1>
+      </div>
+    </div>
+  </div>
+	 <header id='header' class="navbar navbar-default ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">meteor</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">index</a></li>
+            <li><a href="#">inbox</a></li>
+            <li><a href="#">notifitions</a></li>
+          </ul>
+        </nav>
+         <form class='navbar-form pull-left' style='width:300px' >
+            <div class="form-group">
+               <div class="input-group">
+                <div class="">
+                  <input type='text' class='form-control' placeholder='你想学习什么？' />
+                </div>
+               <span class='input-group-addon'><i class='icon-search'></i></span>
+            </div>
+            </div>
+        </form> 
+        <nav class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          	<li class=""><a href="/book">书籍</a></li>
+          	<li class=""><a href="/share">分享中心</a></li>
+          	<li class=""><a href="/question">答疑</a></li>
+          	<li class=""><a href="/rss">优秀rss</a></li>
+          	<li class=""><a href="/audit">入门教材</a></li>
+          	<li class=""><a href="/file">文件库</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+         	{{#if Meteor.user}}
+            <li class="dropdown">
+             <a href="#" class="dropdown-toggle " data-toggle="dropdown"><b class="caret"> </b></a>
+             <ul class=dropdown-menu>
+              <li><a  href='/setting'>我的帐号</a></li>
+              <li><a  href='/u{{Meteor.userId}}'>我的主页</a></li>
+             
+              <li><a  href='/logout'>退出</a></li>
+             </ul>
+           </li>
+         {{else}}
+            <li> <a href="/reg">注册</a></li>
+            <li> <a href="/login">登录</a> </li>
+          {{/if}}
+          </ul>
+        </nav>
+      </div>
+    </header>
+</template>
+
+
+
+
+
