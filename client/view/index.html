@@ -1,33 +1,29 @@
 <template name="index">
 	<div class="row">
-		<div class="col-md-2">
-			<div>
-				<!--login info-->
-				<div class="user-login">
-					<a href="/">
-						<img src="/img/rancho.jpg">
-					</a>
-					<a href="">rancho</a>
+		<div class="col-md-2" id="index-aside">
+			{{>aside-left}}
+		</div>
+		<div class="col-md-10">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class='page-content'>
+							{{>publish_textarea}}
+							{{>broadcast_list}}
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class='suggested-container'>
+							<!--unfinsh blog or question-->
+							{{>user-drafts}}
+							{{>suggested_blogs}}
+							{{>suggested_peoples}}
+						</div>
+					</div>
 				</div>
-				<!--index and inbox-->
-				<div class="nav">
-					
-				</div>
-				<!--unfinsh blog or question-->
-				<div class="user-drafts"></div>
 			</div>
+			
 		</div>
-		<div class="col-md-8">
-			<div>
-				{{>publish_textarea}}
-				{{>broadcast_list}}
-			</div>
-		</div>
-		<div class="col-md-2">
-			<div>
-				{{>suggested_blogs}}
-				{{>suggested_peoples}}
-			</div>
-		</div>
+		
 	</div>
 </template>

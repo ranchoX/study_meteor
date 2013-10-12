@@ -22,5 +22,134 @@
 			padding:2px 12px
 		}
 	}
+	margin-bottom:0px;
+}
+#index-aside{
+	border-right: 1px solid #e8e8e8;
+	padding-right:0;
+}
+aside.aside-left{
+	padding-top:20px;
+	.user-login{
+		margin-bottom: 24px;
+		.username{
+			margin-left:10px;
+			font-weight: bold;
+		}
+	}
+	.actions{
+
+	}
+	.nav{
+		>li{
+			>a{
+				padding:7px 2px 7px 29px;
+				font-size:13px;
+
+				border-radius: 3px 0 0 3px;
+				color:#333;
+				i{
+					position: absolute;
+					left:8px;
+					top: 7px;
+					font-size:16px;
+					color: #666;
+				}
+			}
+		}
+		>li.active{
+			>a{
+				border: 1px solid #e8e8e8;
+				font-weight: bold;
+				border: 1px solid #e8e8e8;
+				background-color: #e4e4e4;
+				i{
+					color: #0072c6;
+				}
+			}
+		}
+	}
+}
+.page-content{
+	padding-left:24px;
+	padding-top:20px;
+	.nav-tabs{
+		border-bottom:none;
+		>li{
+			>a{
+
+				
+			}
+			>a:hover{
+				border:none;
+				background-color:#fff;
+				
+			}
+		}
+		>li.active{
+			a{
+				border:none;
+			}
+			.arrow{
+					 position: absolute;
+					  width: 0;
+					  height: 0;
+					  margin-left: 2px;
+					  vertical-align: middle;
+					  border-bottom:   7px solid #000;
+					  border-right: 7px solid transparent;
+					  border-left:  7px solid transparent;
+					  // Firefox fix for https://github.com/twbs/bootstrap/issues/9538. Once fixed,
+					  // we can just straight up remove this.
+					  border-top: 0 dotted;
+					  content: "";
+					 left: 23px;
+						top: 33px;
+				  
+				}
+				.arrow-border{
+					 bottom:1px;
+					 border-bottom:   7px solid #fff;
+				}
+		}
+	}
+
 }
 
+.publish_textarea{
+	.publish-container{
+		textarea{
+			margin: 0px; width: 653px; height: 116px;
+		}
+	}
+	
+}
+
+.suggested-container{
+	padding-top:20px;
+	.user-drafts{
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0 0 0 20px;
+			>li{
+				margin: 3px 0;
+				>a{
+					position: relative;
+					padding-left: 6px;
+					>i{
+						position: absolute;
+						left: -15px;
+						top: 1px;
+					}
+				}
+			}
+		}
+	}
+}
+.suggested{
+	border: solid 1px #e8e8e8;
+	border-bottom-color: #CCC;
+	border-radius:4px;
+	padding:5px 20px
+}
